@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 1.71 s <<< FAILURE! - in TestSuite
+generateExtentReport(bdd.Runner.TrackingRunner)  Time elapsed: 1.389 s  <<< FAILURE!
+java.lang.NullPointerException
+	at bdd.Runner.TrackingRunner.generateExtentReport(TrackingRunner.java:25)
+
