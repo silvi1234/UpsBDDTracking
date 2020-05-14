@@ -18,10 +18,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
   )
 
 
-public class TrackingRunner extends AbstractTestNGCucumberTests{
+ public class TrackingRunner extends AbstractTestNGCucumberTests{
 
-@AfterClass
-public static void generateExtentReport(){
+ @AfterClass
+ public static void generateExtentReport(){
 	Reporter.loadXMLConfig(new File("config/config.xml"));
 }
 

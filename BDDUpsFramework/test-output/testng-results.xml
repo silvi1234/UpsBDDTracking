@@ -1,23 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="465" started-at="2020-05-14T03:33:25Z" finished-at="2020-05-14T03:33:25Z">
+  <suite name="Default suite" duration-ms="16549" started-at="2020-05-14T06:30:10Z" finished-at="2020-05-14T06:30:27Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:bdd.Runner.TrackingRunner@3c0ecd4b]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:bdd.Runner.TrackingRunner@11dc3715]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="465" started-at="2020-05-14T03:33:25Z" finished-at="2020-05-14T03:33:25Z">
+    <test name="Default test" duration-ms="16549" started-at="2020-05-14T06:30:10Z" finished-at="2020-05-14T06:30:27Z">
       <class name="bdd.Runner.TrackingRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:bdd.Runner.TrackingRunner@3c0ecd4b]" name="setUpClass" is-config="true" duration-ms="420" started-at="2020-05-14T03:33:25Z" finished-at="2020-05-14T03:33:25Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:bdd.Runner.TrackingRunner@11dc3715]" name="setUpClass" is-config="true" duration-ms="315" started-at="2020-05-14T06:30:10Z" finished-at="2020-05-14T06:30:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="generateExtentReport()[pri:0, instance:bdd.Runner.TrackingRunner@3c0ecd4b]" name="generateExtentReport" is-config="true" duration-ms="5" started-at="2020-05-14T03:33:25Z" finished-at="2020-05-14T03:33:25Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:bdd.Runner.TrackingRunner@11dc3715]" name="feature" duration-ms="16073" started-at="2020-05-14T06:30:10Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-14T06:30:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ups Tracking Feature]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="FAIL" signature="generateExtentReport()[pri:0, instance:bdd.Runner.TrackingRunner@11dc3715]" name="generateExtentReport" is-config="true" duration-ms="32" started-at="2020-05-14T06:30:26Z" finished-at="2020-05-14T06:30:26Z">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[InputStream cannot be null]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+              <![CDATA[java.lang.IllegalArgumentException: InputStream cannot be null
+at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:117)
+at com.aventstack.extentreports.configuration.ConfigLoader.getConfigurationHash(ConfigLoader.java:64)
+at com.aventstack.extentreports.reporter.AbstractReporter.loadXMLConfig(AbstractReporter.java:64)
 at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:66)
 at bdd.Runner.TrackingRunner.generateExtentReport(TrackingRunner.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -48,15 +65,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateExtentReport -->
-        <test-method status="SKIP" signature="tearDownClass()[pri:0, instance:bdd.Runner.TrackingRunner@3c0ecd4b]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-05-14T03:33:25Z" finished-at="2020-05-14T03:33:25Z">
+        <test-method status="SKIP" signature="tearDownClass()[pri:0, instance:bdd.Runner.TrackingRunner@11dc3715]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-05-14T06:30:27Z" finished-at="2020-05-14T06:30:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- bdd.Runner.TrackingRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
